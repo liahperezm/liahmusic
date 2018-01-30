@@ -1,0 +1,141 @@
+/*---------------General---------------*/
+
+body{
+	height:100vh;
+	display:grid;
+	margin:0;
+	font-family:Lora;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	margin-bottom: 10px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+.nav a:hover {
+	font-style: italic;
+	color:black;
+}
+
+.social{
+	grid-area: nav;
+	align-self:end;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+
+
+
+
+/*---------------Home Page---------------*/
+
+.artistprofile {
+	margin: 0 auto;
+	width: 700px;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr;
+	grid-gap: 15px;
+	grid-template-areas: "sidebar main nav";
+	align-self:center;
+}
+
+.photo {
+	grid-area: sidebar;
+}
+
+.bio {
+	grid-area: main;
+	align-self: end;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+img {
+	float: left;
+	display: inline-block;
+}
+
+.bio h1 {
+	font-size: 70px !important;
+	font-weight:normal !important;
+	text-transform:uppercase;
+	margin:0px;
+}
+
+.bio p{
+	font-size: 14px;
+	line-height:19px;
+	margin:0px;
+}
+
+
+/*---------------Events---------------*/
+
+.events {
+	margin: 0 auto;
+	width: 700px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 15px;
+	grid-template-areas: "main nav";
+	align-self:center;
+	height:450px !important;
+}
+
+.dates {
+	grid-area: main;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+/*---------------Videos---------------*/
+
+.video {
+	margin: 0 auto;
+	width: 700px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 15px;
+	grid-template-areas: "main nav";
+	align-self:center;
+	height:450px !important;
+}
+
+.ytubevideo {
+	grid-area: main;
+	align-self:center;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+/*---------------Media Queries---------------*/
+
+@media (min-width: 768px) {
+	ul {
+		text-align: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.artistprofile {
+		grid-template-columns: 1fr;
+		grid-template-areas: "nav" "sidebar" "main";
+	}
+}
