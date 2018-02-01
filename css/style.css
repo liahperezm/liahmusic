@@ -142,6 +142,10 @@ img {
 }
 
 @media (max-width: 767px) {
+
+	body{
+	height:auto;
+}
 	.artistprofile {
 		grid-template-columns: 1fr;
 		grid-template-areas: "nav" "sidebar" "main" "social";
