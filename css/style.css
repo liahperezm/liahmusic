@@ -60,6 +60,7 @@ a {
 .bio {
 	grid-area: main;
 	align-self: end;
+	padding-left:20px;
 }
 
 .nav {
