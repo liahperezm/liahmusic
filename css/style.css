@@ -121,7 +121,7 @@ img {
 	grid-gap: 15px;
 	grid-template-areas: "main nav";
 	align-self:center;
-	height:450px !important;
+	height:503px !important;
 }
 
 .ytubevideo {
